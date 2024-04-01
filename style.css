@@ -1,0 +1,56 @@
+
+body{
+    transform: scale(1);
+}
+ .buttons button{
+    border-width: 5px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 20px; 
+    background-color: lightseagreen;
+}
+.buttons{
+    display:grid;
+    
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+
+
+
+#output{
+    width: fit-content;
+    font-size: 50px;
+    height:1em ;
+    justify-self: center; /* Horizontally center the content */
+    align-self: center;
+    grid-column: span 4;
+}
+
+#zero{
+    grid-area: 5/1;
+    grid-column: span 2;  
+}
+#minus{
+    grid-area: 5/4;
+}
+#ce{
+    grid-area: 6/2;
+}
+#ac{
+    grid-area: 6/1;
+}
+#equals{
+    grid-area: 6/4; 
+    grid-column: span 2;
+}
+#dot{
+    
+}
